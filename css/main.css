@@ -1,0 +1,117 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;   /*對全部元素作設定*/
+}
+body {
+	font-family: 'Sourc Sans Pro', sans-serif;
+	font-size: 1rem;
+	-webkit-font-smoothing: antialiased;	
+	-moz-font-smoothing: antialiased;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+img {
+	display: block; 
+	width: 100%;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+
+p {
+	color: #7e7e7e;
+	line-height: 1.5rem;
+}
+
+/* custom class (全域設定) */
+
+.clearfix,.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+		width: 320px; 
+		display: block;
+		margin: 0 auto;
+	}
+
+#content > div {
+	padding-top: 100px;
+}
+
+.col-3, .col-4, .col-6 {
+
+	width: 100%;
+}
+
+/*header*/
+
+#header {
+	position: relative;
+
+}
+
+.fixed {
+	position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+
+.logo {
+	float: left;
+	width: 30%;
+}
+
+
+#maun-toggle {
+	float: right;
+	position: relative;
+	z-index: 10;
+	display: block;
+}
+
+#nav {
+	display: none;
+	position: fixed;
+	right: 0;
+    top: 100%;
+	padding: 5px 0;
+	background-color: rgba(255,255,255,.8);
+}
+
+
+#nav a {
+	padding-left: 20px;
+    padding-right: 180px;
+    line-height: 2;
+	font-size: 1.5rem;
+}
+
+
+
+.login {
+	display: none;
+}
+
+/* content */
+
+.blue-bg {
+	background-color: #45abec;
+}
+
+
+

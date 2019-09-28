@@ -43,7 +43,6 @@ p {
 
 .container {
 		width: 320px; 
-		display: block;
 		margin: 0 auto;
 	}
 
@@ -59,17 +58,19 @@ p {
 /*header*/
 
 #header {
-	position: relative;
-
+	position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.fixed {
-	position: fixed;
+
+/*.fixed {
+	position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
-}
+     造成header沒有高度？
+}*/
 
 .logo {
 	float: left;
@@ -87,8 +88,9 @@ p {
 #nav {
 	display: none;
 	position: fixed;
-	right: 0;
-    top: 100%;
+	
+	/*right: 0;
+    top: 100%;*/
 	padding: 5px 0;
 	background-color: rgba(255,255,255,.8);
 }
@@ -112,6 +114,7 @@ p {
 .blue-bg {
 	background-color: #45abec;
 }
+
 
 
 

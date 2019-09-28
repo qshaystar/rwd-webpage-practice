@@ -66,7 +66,7 @@ p {
 
 .logo {
 	float: left;
-	width: 30%;
+	width: 15%;
 }
 
 
@@ -104,6 +104,40 @@ p {
 	background-color: #45abec;
 }
 
+
+@media (min-width: 1024px) {
+	.container {
+		width: 1170px; 
+		
+	}
+
+	#header {
+		position: static;
+		left: 0%;
+		transform: translateX(0%);
+	}
+
+	#maun-toggle {
+		display: none;
+	}
+
+	#nav {
+		display: block;
+		background: transparent;
+		float: left;
+	}
+
+	#nav li {
+		float: left;
+	}
+	
+	#nav a {
+		padding: 0;
+		padding-left: 10px;
+		font-size: 1rem;
+	}
+
+}
 
 
 

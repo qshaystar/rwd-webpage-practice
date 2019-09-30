@@ -29,8 +29,16 @@ a {
 
 h2 {
 	margin: 0;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
+	color: #3f4450;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #3f4450;
 }
 
 p {
@@ -47,10 +55,24 @@ p {
 	clear: both;
 }
 
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+.clear {
+	clear: both;   /*clearfix無效 加上icon後再試試看*/
+}
+
 .container {
-		width: 320px; 
-		margin: 0 auto;
-	}
+	min-width: 320px;    /*用min-width header無法對齊*/
+	margin: 0 auto;
+	padding: 0 1rem;
+}
 
 #content > div {
 	padding-top: 100px;
@@ -61,6 +83,7 @@ p {
 	width: 100%;
 }
 
+
 /*for mobile*/
 
 .col-6 {
@@ -69,12 +92,24 @@ p {
 
 /*for mobile*/
 
+.blue-bg {
+	background-color: #45abec;
+}
+
+.gray-bg {
+	background-color: #f4f6fa;
+}
+
 .white-text {
 	color: white;
 }
 
+.intro {
+	text-align: center;
+}
+
 .subtitle {
-	margin: 2rem 0;
+	padding: 2rem 0;
 }
 
 .button {
@@ -86,6 +121,7 @@ p {
     font-weight: bold;
 }
 
+
 /*header*/
 
 #header {
@@ -95,6 +131,10 @@ p {
     padding: .8rem 0;
 }
 
+#header i{
+	margin-bottom: 0;
+	font-size: .5rem;  /*換icon後再次確認是否需要*/
+}
 
 .logo {
 	float: left;
@@ -131,11 +171,59 @@ p {
 	display: none;
 }
 
+
+
 /* content */
 
-.blue-bg {
-	background-color: #45abec;
+
+
+i {
+    display: inline-block;  /*換icon再確認一次此屬性 */
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
 }
+
+
+/*features*/
+
+.feature {
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	background-color: white;
+}
+
+.features h4 {
+	margin-top: 1.5rem;
+}
+
+.features img {
+	margin-top: 2rem;
+}
+
+
+/*pricing*/
+
+.btn-border {
+	border-radius: 2.5rem;
+	padding: .5rem;
+	background-color: white;
+}
+
+
+.button.big {
+	width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #7e7e7e;
+}
+
+.button.active  {
+	background-color: #45abec;
+    color: white;
+}
+
+
+
 
 /*
 @media (min-width: 1024px) {

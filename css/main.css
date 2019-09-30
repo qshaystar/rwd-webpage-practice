@@ -27,6 +27,9 @@ a {
 	color: black;
 }
 
+h2 {
+	font-size: 1.5rem;
+}
 
 p {
 	color: #7e7e7e;
@@ -47,7 +50,7 @@ p {
 	}
 
 #content > div {
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .col-3, .col-4, .col-6 {
@@ -59,8 +62,9 @@ p {
 
 #header {
 	position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    padding: .8rem 0;
 }
 
 
@@ -80,14 +84,15 @@ p {
 #nav {
 	display: none;
 	position: fixed;
-	padding: 5px 0;
-	background-color: rgba(255,255,255,.8);
+	top: 2.8rem;
+	padding: .5rem 0;
+	background-color: white;
 }
 
 
 #nav a {
-	padding-left: 20px;
-    padding-right: 180px;
+	padding-left: 2rem;
+    padding-right: 12rem;
     line-height: 2;
 	font-size: 1.5rem;
 }
@@ -104,7 +109,7 @@ p {
 	background-color: #45abec;
 }
 
-
+/*
 @media (min-width: 1024px) {
 	.container {
 		width: 1170px; 
@@ -138,6 +143,6 @@ p {
 	}
 
 }
-
+*/
 
 

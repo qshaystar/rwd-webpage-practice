@@ -49,7 +49,16 @@ p {
 
 /* custom class (全域設定) */
 
-.clearfix,.row:after {
+
+
+.container {
+	max-width: 320px;    /*用min-width or max-width header無法對齊*/
+	margin: 0 auto;
+	display: block;
+}
+
+
+.clearfix, .row:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -66,12 +75,6 @@ p {
 
 .clear {
 	clear: both;   /*clearfix無效 加上icon後再試試看*/
-}
-
-.container {
-	width: 320px;    /*用min-width or max-width header無法對齊*/
-	margin: 0 auto;
-	/*padding: 0 1rem;*/
 }
 
 #content > div {
@@ -126,6 +129,62 @@ p {
 
 .header-fixed {
 	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+}
+
+
+#header .container {
+	position: relative;
+}
+
+.logo {
+	float: left;
+}
+
+#maun-toggle {
+	float: right;
+}
+
+#maun-toggle i {
+	text-decoration: none;
+	margin-bottom: 0;
+	line-height: 60px;
+}
+
+
+#nav {
+	display: none;
+	position: absolute;
+	top: 110%;
+    left: 0;
+    right: 0;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+
+#nav a {
+    padding-left: 2rem;
+    padding-right: 13rem;
+	line-height: 2;
+}
+
+.login {
+	display: none;
+}
+
+
+
+
+
+
+
+/*
+.header-fixed {
+	position: fixed;
 	left: 0;
 	right: 0;
     padding: .8rem 0;
@@ -133,7 +192,7 @@ p {
 
 #header i{
 	margin-bottom: 0;
-	font-size: .5rem;  /*換icon後再次確認是否需要*/
+	font-size: .5rem;  換icon後再次確認是否需要
 }
 
 .logo {
@@ -165,11 +224,8 @@ p {
 	font-size: 1.5rem;
 }
 
+*/
 
-
-.login {
-	display: none;
-}
 
 
 
@@ -225,17 +281,19 @@ i {
 
 
 
-/*
+
 @media (min-width: 1024px) {
 	.container {
-		width: 1170px; max-width?
+		max-width: 1170px; 
 		
 	}
 
-	#header {
-		position: static;
-		left: 0%;
-		transform: translateX(0%);
+	#header .clear {
+		clear: none;
+	}
+
+	#header .clear2 {
+		clear: both;
 	}
 
 	#maun-toggle {
@@ -244,21 +302,38 @@ i {
 
 	#nav {
 		display: block;
-		background: transparent;
-		float: left;
+	    position: static;
+	    background-color: transparent;
+	    float: left;
+	    padding: 0;
 	}
 
 	#nav li {
 		float: left;
-	}
-	
-	#nav a {
-		padding: 0;
-		padding-left: 10px;
-		font-size: 1rem;
+		line-height: 60px;
 	}
 
+	#nav li a {
+		padding: 0;
+	}
+
+	.login {
+		display: block;
+		float: right;
+	}
+
+	.login li {
+		float: left;
+	}
+
+	.login .center {
+		line-height: 60px;
+	}
+
+
+	
+
 }
-*/
+
 
 

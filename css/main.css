@@ -1,10 +1,17 @@
+/*
+blue: #45abec
+title color:; #3f4450
+
+*/
+
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;   /*對全部元素作設定*/
 }
 body {
-	font-family: 'Sourc Sans Pro', sans-serif;
+	font-family: Tahoma, 'Sourc Sans Pro', sans-serif;
 	font-size: 1rem;
 	-webkit-font-smoothing: antialiased;	
 	-moz-font-smoothing: antialiased;
@@ -47,12 +54,12 @@ p {
 	line-height: 1.5rem;
 }
 
+
 /* custom class (全域設定) */
 
 
-
 .container {
-	max-width: 320px;    /*用min-width or max-width header無法對齊*/
+	max-width: 320px;    
 	margin: 0 auto;
 	display: block;
 }
@@ -79,6 +86,10 @@ p {
 
 #content > div {
 	padding-top: 100px;
+}
+
+#content > div:first-child {
+	padding-top: 200px;
 }
 
 .col-3, .col-4, .col-6 {
@@ -108,21 +119,27 @@ p {
 }
 
 .intro {
+	margin-bottom: 1.5rem;
 	text-align: center;
 }
 
 .subtitle {
-	padding: 2rem 0;
+	padding: 1rem 0;
 }
 
 .button {
 	border-radius: 3rem;
-	padding: 1rem 2.5rem;
+	padding: 1.25rem 2.5rem;
 	background-color: white;
     color: #45abec;    
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
+
+.button.bordered {
+	border: 1px solid #45abec;
+}
+
 
 
 /*header*/
@@ -240,6 +257,13 @@ i {
 }
 
 
+/*commercial*/
+
+.commercial .intro {
+	text-align: left;
+}
+
+
 /*features*/
 
 .feature {
@@ -258,6 +282,11 @@ i {
 
 
 /*pricing*/
+
+.pricing i {
+	margin: 0;
+	font-size: 1rem;
+}
 
 .btn-border {
 	border-radius: 2.5rem;
@@ -282,17 +311,88 @@ i {
 
 
 
+.pricing-table {
+	margin: 2.5rem 0;
+}
+
+
+.package {
+	margin-bottom: 1.5rem;
+	padding: 3rem 1rem;
+	background-color: white;
+	text-align: center;
+}
+
+.pricing .intro {
+	margin: 2rem 0;
+}
+
+.price {
+	margin-bottom: 3rem;
+	font-size: 2rem;
+    font-weight: bold;
+}
+
+.duration {
+	font-size: 1rem;
+    font-weight: normal;
+    color: #7e7e7e;
+}
+
+.pricing hr {
+	margin: 0;
+}
+
+.pros {
+	margin: 3rem 0;
+	line-height: 3rem;
+	color: #7e7e7e;
+}
+
+.pricing-table .popular {
+	position: relative;
+	border: 1px solid #45abec;
+}
+
+.label {
+	position: absolute;
+	top: -1.5px;
+	left: -1px;
+	z-index: 10;
+	width: 0px;
+	height: 0px;       
+	border-color:   transparent #45abec;
+	border-width: 0px 0px 90px 90px;
+	border-style: solid;                
+}
+
+.caption {
+	position: absolute;
+	left: -85px;
+    top: 20px;
+	transform: rotate(-45deg);
+	color: white;
+}
+
+
+
+
+
+
+
 @media (min-width: 1024px) {
 	.container {
 		max-width: 1170px; 
 		
 	}
 
+	/*header*/
+
 	#header .clear {
 		clear: none;
 	}
 
-	#header .clear2 {
+	#header .clear-above {
 		clear: both;
 	}
 

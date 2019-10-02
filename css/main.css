@@ -105,7 +105,7 @@ hr {
 	padding-top: 200px;
 }
 
-.col-3, .col-4, .col-6 {
+.col-2, .col-3, .col-4, .col-6 {
 
 	width: 100%;
 }
@@ -138,11 +138,10 @@ hr {
 
 .button {
 	border-radius: 3rem;
-	padding: 1.25rem 3rem;
+	padding: 1rem 2.5rem;
 	background-color: white;
     color: #45abec;    
     font-size: 1rem;
-    font-weight: bold;
 }
 
 .button.bordered {
@@ -159,7 +158,6 @@ i {
 }
 
 .bubble {
-	position: relative;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -225,55 +223,6 @@ i {
 
 
 
-
-
-/*
-.header-fixed {
-	position: fixed;
-	left: 0;
-	right: 0;
-    padding: .8rem 0;
-}
-
-#header i{
-	margin-bottom: 0;
-	font-size: .5rem;  換icon後再次確認是否需要
-}
-
-.logo {
-	float: left;
-	width: 30%;
-}
-
-
-#maun-toggle {
-	float: right;
-	position: relative;
-	z-index: 10;
-	display: block;
-}
-
-#nav {
-	display: none;
-	position: fixed;
-	top: 2.8rem;
-	padding: .5rem 0;
-	background-color: white;
-}
-
-
-#nav a {
-	padding-left: 2rem;
-    padding-right: 12rem;
-    line-height: 2;
-	font-size: 1.5rem;
-}
-
-*/
-
-
-
-
 /* content */
 
 
@@ -288,16 +237,7 @@ i {
 
 /*features*/
 
-.trangle {
-	position: absolute;
-	top: 54%;
-    left: 54%;
-	width: 0px;
-    height: 0px;
-    border-color: #8355f6 transparent;
-    border-width: 0px 0px 30px 30px;
-    border-style: solid;
-}
+
 
 .feature {
 	margin-bottom: 1.5rem;
@@ -329,6 +269,7 @@ i {
 
 
 .button.big {
+	display: inline-block;
 	width: 100%;
     text-align: center;
     font-size: 1rem;
@@ -345,7 +286,7 @@ i {
 
 
 .pricing-table {
-	padding-top: 2.5rem;
+	padding-top: 3rem;
 	padding-bottom: 4rem; 
 }
 
@@ -357,9 +298,7 @@ i {
 	text-align: center;
 }
 
-.pricing .intro {
-	margin: 2rem 0;
-}
+
 
 .price {
 	margin-bottom: 3rem;
@@ -391,13 +330,17 @@ i {
 
 .pricing-table .popular {
 	position: relative;
+	
+}
+
+.popular .package {
 	border: 1px solid #45abec;
 }
 
 .label {
 	position: absolute;
-	top: -1.5px;
-	left: -1px;
+	top: 0%;
+	left: 0%;
 	width: 0px;
 	height: 0px;       
 	border-color:   transparent #45abec;
@@ -417,7 +360,7 @@ i {
 /*event*/
 
 .event {
-	padding-bottom: 300px;
+	padding-bottom: 400px;
 	background-image: url(https://placem.at/things?w=1920&h=1080);
 	background-size: cover;
 	background-position: 50%;
@@ -433,18 +376,26 @@ i {
 	padding-top: 100px;
 }
 
-#footer .col-3 {
+#footer .col-2, .col-3, .col-4 {
 	margin-bottom: 3rem;
 }
 
 #footer h4 {
-	line-height: 3;
+	margin-bottom: 2.5rem;
 }
+
+#footer .subtitle {
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+	}
 
 .company {
 	line-height: 2.5;
     color: #7e7e7e;
-    font-size: 1.12rem;
+}
+
+.company a {
+	color: #7e7e7e;
 }
 
 
@@ -454,8 +405,7 @@ i {
 }
 
 .social-media li {
-	float: left; 
-	    
+	float: left; 	    
 }
 
 .social-media li a {
@@ -475,12 +425,10 @@ i {
 	color: #7e7e7e;
 }
 
-.contact-info {
-	font-size: 1.1rem;
-}
+
 
 .contact-info a {
-	font-size: 1.1rem;
+	
 	color: #7e7e7e;
 }
 
@@ -514,11 +462,76 @@ i {
 
 
 
+
+
+
+
+/*desktop*/
+
 @media (min-width: 1024px) {
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	/*custom class */
+
 	.container {
 		max-width: 1170px; 
 		
 	}
+
+	.row {
+		margin: 0 -3rem;
+	}
+
+	.features .row, .pricing .row, #footer .row {
+		margin: 0 -1rem;
+	}
+
+	.col-2 {
+		float: left;
+		width: 16.66666%;
+	}
+
+	.col-3 {
+		float: left;
+		width: 25%;
+	}
+
+	.col-4 {
+		float: left;
+		width: 33.33333%
+	}
+
+	.col-6 {
+		float: left;
+		margin-bottom: 0;
+		padding: 0 3rem;
+		width: 50%;
+	}
+
+	.full-padding {
+		padding: 0 1rem;
+	}
+
+
+	.intro {
+		margin-bottom: 5rem;
+	}
+
+	.intro.text-center {
+	    padding: 0 18rem
+	}
+
+
+	.info {
+		margin: 4rem 0
+	}
+
+
+
+
 
 	/*header*/
 
@@ -535,11 +548,11 @@ i {
 	}
 
 	#nav {
+		float: left;
 		display: block;
-	    position: static;
+	    position: static;    
+	    padding: 0 13%;
 	    background-color: transparent;
-	    float: left;
-	    padding: 0;
 	}
 
 	#nav li {
@@ -548,7 +561,8 @@ i {
 	}
 
 	#nav li a {
-		padding: 0;
+		padding: 0 2rem;
+		color: white;
 	}
 
 	.login {
@@ -560,9 +574,86 @@ i {
 		float: left;
 	}
 
-	.login .center {
-		line-height: 60px;
+	.login li:first-child {
+		padding: 0 2rem;   /*版面縮小會跑掉*/
+		line-height: 60px;	
 	}
+
+
+	.login .button {
+		border-bottom-right-radius: 0;
+	}
+
+	
+
+	/*content*/
+
+	/*commercial*/
+
+	.commercial {
+		padding-bottom: 100px;
+	}
+
+	
+
+	.commercial .info {
+		margin-top: 6rem;
+	}
+
+
+	/*services*/
+
+	.services .row {
+    
+        margin-bottom: 5rem;
+	}
+
+
+	.services .pull-right {
+		float: right;
+	}
+
+
+	.services .bubble {
+		border-bottom-right-radius: 0;
+	}
+
+		
+
+	/*pricing*/
+
+	.btn-border {
+		margin: 0 auto;
+		width: 35%;
+		text-align: center;
+	}
+
+	.button.big {
+		width: auto;
+	}
+
+	.pricing-table {
+		padding-top: 5rem;
+	}
+
+	.label {
+		left: 4%;
+	}
+
+
+	/*footer*/
+
+	
+
+	.copyright {
+		float: left;
+	}
+
+	.policy {
+		float: right;
+		margin: 0;
+	}
+	
 
 
 	

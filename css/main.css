@@ -593,11 +593,10 @@ i {
 
 	.container {
 		max-width: 1024px; 
-		
 	}
 
 	.row {
-		margin: 0 -3rem;
+		margin: 0 -2rem;
 	}
 
 
@@ -619,7 +618,7 @@ i {
 	.col-6 {
 		float: left;
 		margin-bottom: 0;
-		padding: 0 3rem;
+		padding: 0 2rem;
 		width: 50%;
 	}
 
@@ -635,7 +634,7 @@ i {
 	}
 
 	.info {
-		margin: 4rem 0;
+		margin: 1rem 0;
 	}
 
 	h2 {
@@ -661,7 +660,7 @@ i {
 		float: left;
 		display: block;
 	    position: static;    
-	    padding: 0 8%;
+	    padding: 0 7%;
 	    background-color: transparent;
 	}
 
@@ -707,7 +706,7 @@ i {
 	
 
 	.commercial .info {
-		margin-top: 6rem;
+		margin-top: 3rem;
 	}
 
 
